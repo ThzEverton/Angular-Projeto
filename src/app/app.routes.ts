@@ -12,7 +12,13 @@ export const routes: Routes = [
     path:'unoeste-inicio',
     loadComponent:() => import('./pages/inicio/inicio.component').then(c => c.InicioComponent)
 
+},
+{
+    path:'unoeste-secundaria',
+    loadComponent:() => import('./pages/secundaria/secundaria.component').then(c => c.SecundariaComponent)
+
 }
+
 
 ];
 
