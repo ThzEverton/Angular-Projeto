@@ -13,8 +13,8 @@ export class ReduzNomePipe implements PipeTransform {
     }
     const nomes=texto.split(' ');
     const primeiroNome = nomes[0];
-    const ultimoNome = nomes[nomes.length - 4];
-    return '${primeiroNome} ${ultimoNome}';
+    const ultimoNome = nomes[nomes.length - 1];
+    return `${primeiroNome} ${ultimoNome[0]}.`;
   }
 
 }
